@@ -4,7 +4,7 @@ This app was built using React Hooks, and can therefore be run by running npm st
 
 ## Live Demo
 
-The application is hosted on netlify and can be accessed at the following web address: []()
+The application is hosted on netlify and can be accessed at the following web address: [https://elated-yonath-f3d196.netlify.app/](https://elated-yonath-f3d196.netlify.app/)
 
 ## Screenshots
 
@@ -20,15 +20,15 @@ The application is hosted on netlify and can be accessed at the following web ad
 ## Features 
 
 - Responsive and mobile friendly design
-- A user can filter the list of students by their name and lastname
-- Search results are always sorted based on most relevant to the name search term.
-- A user can add tags to the each student.
-- A user can filter the list of tags of each user.
-- Each student have an expandable list view, so that all of their test scores may be viewed by clicking expand button located upper-right corner.
+- A user can filter the list of students by their names and lastnames
+- Search results are always sorted based on most relevant to the name search term
+- A user can add tags to the each student
+- A user can filter the list of tags of each user
+- Each student have an expandable list view, so that all of their test scores may be viewed by clicking expand button located upper-right corner
 
 ## External API Used
 
-- [https://www.hatchways.io/api/assessment/students](https://www.hatchways.io/api/assessment/students)
+- [https://api.hatchways.io/assessment/students](https://api.hatchways.io/assessment/students)
 
 
 
