@@ -10,10 +10,6 @@ The application is hosted on netlify and can be accessed at the following web ad
 
 ![Screenshot (9)](https://user-images.githubusercontent.com/71195337/120087182-d4fd9680-c0b3-11eb-965b-0f2f662005de.png)
 
-##
-
-![Screenshot (10)](https://user-images.githubusercontent.com/71195337/120087201-f52d5580-c0b3-11eb-985e-5f766271ea8a.png)
-
 ## Tech Stack
 
 - HTML
@@ -30,7 +26,7 @@ The application is hosted on netlify and can be accessed at the following web ad
 - A user can filter the list of tags of each user.
 - Each student have an expandable list view, so that all of their test scores may be viewed by clicking expand button located upper-right corner.
 
-## External API used
+## External API Used
 
 - [https://www.hatchways.io/api/assessment/students](https://www.hatchways.io/api/assessment/students)
 
