@@ -1,0 +1,77 @@
+.student {
+    display: flex;
+    margin: 5px 30px;
+    border-bottom: 1px solid lightgray;
+}
+
+.student-content {
+    color: gray;
+    margin-bottom: 10px;
+    width: 80%;
+}
+
+.student-title {
+    text-transform: uppercase;
+    color: black;
+}
+
+.student-image {
+    border: 1px solid grey;
+    border-radius: 50%;
+    margin-right: 20px;
+    margin-top: 15px;
+    width: 120px;
+    height: 120px;
+}
+
+.student-input {
+    border: none;
+    border-bottom: 1px solid lightgray;
+    width: 55%;
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    margin: 10px;
+    padding: 10px;
+    outline: none;
+}
+
+.tag-container {
+    width: 60%;
+    display: inline;
+}
+
+.student-tag {
+    margin: 10px;
+    padding: 5px;
+    background-color: lightgray;
+    border-radius: 20%;
+    width: 60%;
+}
+
+.student-button {
+    width: 20px;
+    height: 20px;
+    border: none;
+    background: none;
+}
+
+@media (max-width: 800px) {
+    .student {
+        width: 250px;
+    }
+    .student-image {
+        width: 70px;
+        height: 70px;
+    }
+    .student-button {
+        width: 10px;
+        height: 10px;
+    }
+    .student-title {
+        font-size: 20px;
+    }
+    .student-input {
+        width: 75%;
+        font-size: 15px;
+    }
+}
