@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import { TiPlus, TiMinus } from "react-icons/ti";
-import SearchBar from '../search-bar.component/searchbar-component';
+import SearchBar from '../Search-Bar/search-bar.component';
 import './student.styles.css';
 
 
 const Student = ({ student: { firstName, lastName, city, company, email, skill, pic, grades } }) => {
 
     const [gradesList, setGrades] = useState(false);
-    const [query, setQuery] = useState('');
+    const [tagInput, setTagInput] = useState('');
     const [tagNames, setTagName] = useState([]);
     const [searchQuery, setSearch] = useState('');
 
@@ -15,23 +15,27 @@ const Student = ({ student: { firstName, lastName, city, company, email, skill, 
         setGrades(!gradesList);
     };
 
+    // Handle tag adding input 
     const handleChange = e => {
-        setQuery(e.target.value);
+        setTagInput(e.target.value);
     };
 
+    // Handle tag submit
     const handleSubmit = e => {
         e.preventDefault();
-        tagNames.push(query);
+        tagNames.push(tagInput);
         setTagName(tagNames);
-        setQuery([]);
+        setTagInput([]);
     };
 
+    // Handle tag search input
     const handleSearch = e => {
         setSearch(e.target.value);
     };
 
-    const filteredTags = tagNames.filter(tagN =>
-        tagN.toLowerCase().includes(searchQuery.toLowerCase()));
+    // Filter students' tags based on tag search input
+    const filteredTags = tagNames.filter(tagName =>
+        tagName.toLowerCase().includes(searchQuery.toLowerCase()));
 
     return (
         <div className='student'>
@@ -55,6 +59,7 @@ const Student = ({ student: { firstName, lastName, city, company, email, skill, 
                                     <p>Test {grades.indexOf(grade) + 1}: {grade}% </p>
                                 ))
                             }
+                            {/* Render tags based on the results of filtered array */}
                             {
                                 filteredTags.map(tag => (
                                     <div className='tag-container'>
@@ -64,13 +69,13 @@ const Student = ({ student: { firstName, lastName, city, company, email, skill, 
                                 ))
                             }
                             <form onSubmit={handleSubmit}>
-                                <input className='student-input' type="text" value={query} onChange={handleChange} placeholder='Add a tag' />
+                                <SearchBar placeholder='Add a tag' handleChange={handleChange} searchQuery={tagInput} searchTagbar />
                             </form>
                         </div>
                         : null
                 }
             </div>
-
+            {/* Click expand button, Toggle plus icon and show student's expandable list view */}
             <button className='student-button' type='button' onClick={showGrades}>
                 {
                     gradesList ?

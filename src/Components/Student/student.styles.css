@@ -24,17 +24,6 @@
     height: 120px;
 }
 
-.student-input {
-    border: none;
-    border-bottom: 1px solid lightgray;
-    width: 55%;
-    font-family: "Raleway", sans-serif;
-    font-size: 18px;
-    margin: 10px;
-    padding: 10px;
-    outline: none;
-}
-
 .tag-container {
     width: 60%;
     display: inline;
@@ -69,9 +58,5 @@
     }
     .student-title {
         font-size: 20px;
-    }
-    .student-input {
-        width: 75%;
-        font-size: 15px;
     }
 }

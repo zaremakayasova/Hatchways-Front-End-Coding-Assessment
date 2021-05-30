@@ -12,7 +12,6 @@ const SearchBar = ({ placeholder, handleChange, searchQuery, searchTagbar }) => 
         placeholder={placeholder}
         value={searchQuery}
         onChange={handleChange} />
-
 );
 
 export default SearchBar;
